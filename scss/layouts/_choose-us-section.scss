@@ -1,0 +1,65 @@
+.choose-us-section {
+    padding-bottom: 105px;
+    padding-top: 175px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media screen and (min-width: $bp-desktop){
+        padding-bottom: 85px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+
+            @media screen and (min-width: $bp-desktop){
+                gap: 20px;
+                padding-top: 48px;
+            }
+        }
+
+        &__section-title {
+            font-weight: 700;
+            font-size: 32px;
+
+            @media screen and (min-width: $bp-desktop) {
+                font-weight: 700;
+                font-size: 64px;
+            }
+        }
+    
+        &__card {
+            padding: 24px 32px;
+            width: 316px;
+            height: 181px;
+            border-radius: 32px;
+            box-shadow: 0 3px 5px lightblue;
+            background-color: #ffffff;
+        }
+
+        &__card.first {
+            margin-top: 20px;
+
+            @media screen and (min-width: $bp-desktop) {
+                    margin-top: 0;
+                }
+        }
+    
+        &__advantages {
+            color: #000000;
+            font-size: 18px;
+            line-height: 1.3;
+            text-align: center;
+        }
+    
+        &__icon {
+            display: flex;
+            margin-left: 102px;
+            fill: var(--color-primary-blue);
+        }
+}
+

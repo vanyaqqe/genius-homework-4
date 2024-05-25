@@ -1,0 +1,44 @@
+.our-procedures-section {
+padding-left: 20px;
+padding-right: 20px;
+
+@media screen and (min-width: $bp-desktop) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+             
+
+        &__slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+        }
+    
+        &__container {
+            overflow: hidden;
+        }
+    
+        &__list {
+            margin-bottom: 32px;
+            z-index: 0;    
+        }
+
+        &__button {
+            display: none;
+
+            @media screen and (min-width: $bp-desktop) {
+                    display: flex;
+                }
+        }
+
+        &__title {
+            padding-bottom: 50px;
+        }
+
+    
+}
+
+
+

@@ -1,0 +1,122 @@
+.about-us-section {
+    position: relative;
+    padding: 0;
+    padding-bottom: 105px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media screen and (min-width: $bp-desktop) {
+        padding-bottom: 96px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            gap: 32px;
+            padding: 0 20px;
+
+            @media screen and (min-width: $bp-desktop){
+                padding: 0 100px;
+            }
+        }
+
+        
+    
+        &__content {
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            gap: 16px;
+            max-width: 710px;
+            width: 100%;
+            padding-top: 40px;
+
+            @media screen and (min-width: $bp-desktop){
+                gap: 40px;
+            }
+        }
+    
+        &__images {
+            display: none;
+
+            @media screen and (min-width: $bp-desktop){
+                position: relative;
+                    display: grid;
+                    -webkit-column-gap: 0;
+                    -moz-column-gap: 0;
+                    column-gap: 0;
+                    row-gap: 40px;
+                    max-width: 500px;
+                    width: 100%;
+                    justify-items: start;
+            }
+   
+        }
+    
+        &__before {
+            justify-self: start;
+            border-radius: 50%;
+        }
+    
+        &__after {
+            justify-self: end;
+            border-radius: 50%;
+        }
+    
+        &__stars {
+            position: absolute;
+            -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+        }
+    
+        &__star-1 {
+            display: none;
+
+            @media screen and (min-width: $bp-desktop) {
+                display: flex;
+                    top: 340px;
+                    left: 120px;
+                }
+
+            
+        }
+    
+        &__star-2 {
+            display: none;
+            @media screen and (min-width: $bp-desktop){
+                display: flex;
+                top: 32px;
+                left: 470px;
+            }
+        }
+    
+        &__star-3 {
+            display: none;
+
+            @media screen and (min-width: $bp-desktop) {
+                display: flex;
+                    top: 270px;
+                    left: 472px;
+                }
+        }
+    
+        &__text .accent {
+            font-weight: 700;
+
+            @media screen and (min-width: $bp-desktop){
+                font-weight: 600;
+            }
+        }
+}
+

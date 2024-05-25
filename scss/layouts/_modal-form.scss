@@ -1,0 +1,81 @@
+.form {
+    position: relative;
+    margin-bottom: 32px;
+
+    &__label {
+            position: absolute;
+            left: 42px;
+            top: 16px;
+        }
+    
+        &__input {
+            padding: 14px 25px;
+            width: 100%;
+            font-size: 14px;
+            line-height: 1.17;
+            border: 1px solid var(--color-secondary-gray);
+            border-radius: 32px;
+            background-color: transparent;
+            width: 310px;
+            height: 52px;
+            color: #ffffff;
+
+            @media screen and (min-width: $bp-desktop) {
+                    width: 310px;
+                    height: 52px;
+                    font-size: 16px;
+                    padding: 18px 32px;
+                }
+        }
+    
+        &__input:focus {
+            border-color: var(--color-secondary-gray);
+            background-color: var(--color-secondary-gray);
+            color: #ffffff;
+            outline: none;
+        }
+    
+        &__input::placeholder {
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.17;
+        }
+    
+        &__input:focus::placeholder {
+            color: #ffffff;
+        }
+    
+        &__button {
+            margin: 0 auto 24px;
+            display: block;
+            width: 257px;
+            height: 45px;
+
+            @media screen and (min-width: $bp-desktop) {
+                    width: 300px;
+                    height: 55px;
+                }
+        }
+    
+        &__button:hover {
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid var(--color-primary-blue);
+        }
+    
+        &__terms {
+            margin: 0 auto;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.5;
+            text-align: center;
+            max-width: 220px;
+            color: var(--color-secondary-gray);
+        }
+    
+        &__terms-link {
+            color: var(--color-secondary-gray);
+            text-underline-offset: 2px;
+        }
+}
+

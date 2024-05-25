@@ -1,0 +1,19 @@
+.button {
+    color: var(--color-pimary-white);
+    background-color: var(--color-primary-blue);
+    border: 2px solid var(--color-primary-blue);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    width: 232px;
+    height: 56px;
+    margin-bottom: 14px;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--color-primary-blue-dark);
+    border: 2px solid var(--color-primary-blue);
+}
